@@ -90,6 +90,8 @@ describe('App Page', () => {
 
     const [addedFirstTaskRemoveButton] = screen.getAllByTestId('remove-task-button');
 
+    console.log(addedFirstTaskRemoveButton);
+
     fireEvent.click(addedFirstTaskRemoveButton);
 
     expect(addedFirstTaskTitle).not.toBeInTheDocument();
